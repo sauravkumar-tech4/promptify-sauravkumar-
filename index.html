@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4-Year IT Career Roadmap | Saurav</title>
+<style>
+:root {
+  --bg:#0b1020;
+  --card:#141d32;
+  --text:#edf3ff;
+  --muted:#a6b3ca;
+  --blue:#67a6ff;
+  --green:#5ee0a0;
+  --border:#283650;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;line-height:1.7;
+}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+header{
+  position:sticky;top:0;z-index:10;
+  background:#0b1020ed;border-bottom:1px solid var(--border);
+  padding:15px 7%;
+  display:flex;justify-content:space-between;align-items:center;gap:15px;
+}
+.logo{font-size:20px;font-weight:bold}
+.logo span{color:var(--blue)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--muted);font-size:14px}
+.container{width:min(1100px,90%);margin:auto}
+.hero{padding:85px 0 55px}
+.tag{
+  display:inline-block;border:1px solid #365580;color:var(--blue);
+  border-radius:30px;padding:5px 13px;font-size:13px;margin-bottom:20px;
+}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.15;margin-bottom:20px}
+h1 span{color:var(--blue)}
+h2{font-size:28px;margin-bottom:12px}
+h3{font-size:20px;margin-bottom:10px}
+p{color:var(--muted);margin-bottom:15px}
+.hero p{max-width:650px;font-size:17px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{
+  display:inline-block;padding:12px 19px;border-radius:9px;
+  background:var(--blue);color:#071326;font-weight:bold;border:none;cursor:pointer;
+}
+.btn.secondary{background:var(--card);border:1px solid var(--border);color:var(--text)}
+.stats,.grid{display:grid;gap:17px}
+.stats{grid-template-columns:repeat(4,1fr);margin:20px 0 65px}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{
+  background:var(--card);border:1px solid var(--border);
+  padding:23px;border-radius:15px;margin-bottom:17px;
+}
+.stat strong{display:block;font-size:27px;color:var(--green)}
+.stat span{color:var(--muted);font-size:13px}
+section{padding:32px 0 45px;scroll-margin-top:80px}
+.section-intro{max-width:700px;margin-bottom:25px}
+.year{border-left:3px solid var(--blue)}
+.year-label{color:var(--green);font-weight:bold;font-size:13px;letter-spacing:1px}
+ul{padding-left:21px;color:var(--muted)}
+li{margin:8px 0}
+.month{
+  border-top:1px solid var(--border);padding:14px 0;
+}
+.month summary{cursor:pointer;font-weight:bold}
+.month p{margin:10px 0 0;font-size:14px}
+.checklist label{
+  display:flex;gap:10px;align-items:flex-start;
+  padding:11px 0;border-bottom:1px solid var(--border);cursor:pointer;
+}
+input[type=checkbox]{margin-top:6px;accent-color:var(--green);width:17px;height:17px}
+.progress-bg{height:9px;background:#29364c;border-radius:10px;overflow:hidden;margin:15px 0}
+.progress-bar{height:100%;width:0;background:var(--green);transition:width .2s}
+.progress-text{font-size:14px;color:var(--green)}
+.resource{padding:13px 0;border-bottom:1px solid var(--border)}
+.resource:last-child{border-bottom:0}
+footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color:var(--muted)}
+.small{font-size:13px}
+@media(max-width:720px){
+ header{padding:13px 5%;align-items:flex-start;flex-direction:column}
+ nav{gap:12px}
+ .container{width:92%}
+ .hero{padding:55px 0 30px}
+ .stats{grid-template-columns:repeat(2,1fr);margin-bottom:30px}
+ .grid{grid-template-columns:1fr}
+ .card{padding:18px}
+ h2{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SAURAV<span>.ROADMAP</span></div>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#roadmap">4-Year Plan</a>
+    <a href="#dsa">DSA</a>
+    <a href="#projects">Projects</a>
+    <a href="#resources">Resources</a>
+  </nav>
+</header>
+
+<main class="container">
+
+<section class="hero" id="overview">
+  <span class="tag">YOUR 2026 – 2030 CAREER PLAN</span>
+  <h1>From Student to<br><span>Software Engineer.</span></h1>
+  <p>A practical four-year roadmap for a B.Tech/B.E. student targeting software development jobs with a ₹20–30+ LPA package.</p>
+  <div class="buttons">
+    <a href="#roadmap" class="btn">Explore Roadmap →</a>
+    <a href="#tracker" class="btn secondary">Track My Progress</a>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="card stat"><strong>4 Years</strong><span>Learning journey</span></div>
+  <div class="card stat"><strong>3 Hours</strong><span>Daily study target</span></div>
+  <div class="card stat"><strong>4 Projects</strong><span>Portfolio goal</span></div>
+  <div class="card stat"><strong>₹20–30L+</strong><span>Target annual CTC</span></div>
+</div>
+
+<section id="roadmap">
+  <h2>Your 4-Year Roadmap</h2>
+  <p class="section-intro">Learn fundamentals first, develop real applications next, and prepare for internships and placements before graduation.</p>
+
+  <div class="card year">
+    <div class="year-label">YEAR 01 · OCT 2026 – SEP 2027</div>
+    <h3>Build Your Foundation</h3>
+    <p>Goal: Learn programming and become comfortable building small projects.</p>
+    <ul>
+      <li>Learn C++: variables, loops, functions, arrays and OOP.</li>
+      <li>Learn Git, GitHub and basic terminal commands.</li>
+      <li>Study basic DSA, searching, sorting and time complexity.</li>
+      <li>Learn HTML, CSS and JavaScript fundamentals.</li>
+      <li>Build a portfolio, calculator and student management project.</li>
+    </ul>
+    <details class="month">
+      <summary>October 2026 — C++ setup</summary>
+      <p>Install a compiler, configure VS Code and write your first programs.</p>
+    </details>
+    <details class="month">
+      <summary>November 2026 — Conditions and loops</summary>
+      <p>Practise if/else, switch, loops and functions. Build a number guessing game.</p>
+    </details>
+    <details class="month">
+      <summary>December 2026 — Arrays and strings</summary>
+      <p>Learn arrays, strings, vectors, searching and sorting.</p>
+    </details>
+    <details class="month">
+      <summary>January 2027 — OOP and pointers</summary>
+      <p>Study classes, objects, constructors, references and pointers.</p>
+    </details>
+    <details class="month">
+      <summary>February 2027 — STL and GitHub</summary>
+      <p>Learn vector, map, set, stack, queue and publish your code.</p>
+    </details>
+    <details class="month">
+      <summary>March 2027 — Recursion and complexity</summary>
+      <p>Understand recursion, binary search and Big-O notation.</p>
+    </details>
+    <details class="month">
+      <summary>April 2027 — HTML and CSS</summary>
+      <p>Build a responsive personal portfolio website.</p>
+    </details>
+    <details class="month">
+      <summary>May 2027 — JavaScript</summary>
+      <p>Learn functions, arrays, objects, DOM and events.</p>
+    </details>
+    <details class="month">
+      <summary>June 2027 — APIs</summary>
+      <p>Learn fetch, JSON, async/await and error handling.</p>
+    </details>
+    <details class="month">
+      <summary>July 2027 — Education website</summary>
+      <p>Create a responsive course listing website for Log Band Education.</p>
+    </details>
+    <details class="month">
+      <summary>August 2027 — Deployment</summary>
+      <p>Deploy your website and document projects with README files.</p>
+    </details>
+    <details class="month">
+      <summary>September 2027 — Revision</summary>
+      <p>Review C++, DSA and web fundamentals. Improve incomplete projects.</p>
+    </details>
+  </div>
+
+  <div class="card year">
+    <div class="year-label">YEAR 02 · OCT 2027 – SEP 2028</div>
+    <h3>Become a Full-Stack Developer</h3>
+    <p>Goal: Build complete applications with a frontend, backend and database.</p>
+    <ul>
+      <li>Learn React, Node.js, Express and REST APIs.</li>
+      <li>Learn SQL and PostgreSQL; study DBMS, OS and networking.</li>
+      <li>Study linked lists, stacks, queues, trees, graphs and heaps.</li>
+      <li>Build a course platform with accounts and an admin dashboard.</li>
+      <li>Deploy your projects and begin applying for internships.</li>
+    </ul>
+  </div>
+
+  <div class="card year">
+    <div class="year-label">YEAR 03 · OCT 2028 – SEP 2029</div>
+    <h3>Gain Experience</h3>
+    <p>Goal: Demonstrate that you can solve problems and contribute to real software.</p>
+    <ul>
+      <li>Practise medium-level DSA and dynamic programming.</li>
+      <li>Apply for summer internships and student developer opportunities.</li>
+      <li>Learn testing, authentication, deployment and code reviews.</li>
+      <li>Build one production-style application with documentation.</li>
+      <li>Practise technical interviews and basic system design.</li>
+    </ul>
+  </div>
+
+  <div class="card year">
+    <div class="year-label">YEAR 04 · OCT 2029 – SEP 2030</div>
+    <h3>Prepare for Placements</h3>
+    <p>Goal: Turn your skills, experience and portfolio into job offers.</p>
+    <ul>
+      <li>Revise DSA and practise timed coding assessments.</li>
+      <li>Prepare OOP, DBMS, OS, networking and SQL interview questions.</li>
+      <li>Practise mock interviews and project explanations.</li>
+      <li>Apply through campus placements, company career pages and referrals.</li>
+      <li>Compare fixed pay, variable pay, equity and job responsibilities.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="dsa">
+  <h2>DSA Learning Targets</h2>
+  <p class="section-intro">Focus on understanding and revising problems, not just increasing your problem count.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Year 1</h3>
+      <p>Target: 100 cumulative problems</p>
+      <ul><li>Arrays and strings</li><li>Searching and sorting</li><li>Hashing basics</li><li>Recursion fundamentals</li></ul>
+    </div>
+    <div class="card">
+      <h3>Year 2</h3>
+      <p>Target: 200 cumulative problems</p>
+      <ul><li>Linked lists and stacks</li><li>Trees and heaps</li><li>Graphs and backtracking</li><li>Greedy algorithms</li></ul>
+    </div>
+    <div class="card">
+      <h3>Year 3</h3>
+      <p>Target: 300 cumulative problems</p>
+      <ul><li>Dynamic programming</li><li>Advanced graph problems</li><li>Mixed interview practice</li><li>Timed coding assessments</li></ul>
+    </div>
+    <div class="card">
+      <h3>Year 4</h3>
+      <p>Target: 350 cumulative problems</p>
+      <ul><li>Revise difficult problems</li><li>Practise mock interviews</li><li>Improve speed and accuracy</li><li>Explain time complexity</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects for Your Resume</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>01. Student Manager</h3>
+      <p>Build a C++ application for managing students, marks and records.</p>
+      <span class="tag">Year 1</span>
+    </div>
+    <div class="card">
+      <h3>02. Log Band Education</h3>
+      <p>Create a course website with student accounts, lessons and an admin panel.</p>
+      <span class="tag">Year 1–2</span>
+    </div>
+    <div class="card">
+      <h3>03. Team Task Manager</h3>
+      <p>Build task assignments, team roles, comments, database storage and tests.</p>
+      <span class="tag">Year 2</span>
+    </div>
+    <div class="card">
+      <h3>04. Production-Style App</h3>
+      <p>Add automated tests, logging, monitoring, deployment and documentation.</p>
+      <span class="tag">Year 3</span>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <h2>Free Learning Resources</h2>
+  <div class="card">
+    <div class="resource">
+      <h3>C++ Programming</h3>
+      <p><a href="https://www.learncpp.com/" target="_blank" rel="noopener">LearnCpp →</a></p>
+    </div>
+    <div class="resource">
+      <h3>Web Development</h3>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">MDN Web Docs →</a></p>
+    </div>
+    <div class="resource">
+      <h3>Full-Stack Development</h3>
+      <p><a href="https://www.theodinproject.com/" target="_blank" rel="noopener">The Odin Project →</a></p>
+    </div>
+    <div class="resource">
+      <h3>Git and GitHub</h3>
+      <p><a href="https://skills.github.com/" target="_blank" rel="noopener">GitHub Skills →</a></p>
+    </div>
+    <div class="resource">
+      <h3>DSA Practice</h3>
+      <p><a href="https://leetcode.com/studyplan/" target="_blank" rel="noopener">LeetCode Study Plans →</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="tracker">
+  <h2>Your Progress Tracker</h2>
+  <p class="section-intro">Tick each milestone as you complete it. Your progress is saved in this browser when local storage is available.</p>
+  <div class="card checklist">
+    <div class="progress-text" id="progressText">0% completed</div>
+    <div class="progress-bg"><div class="progress-bar" id="progressBar"></div></div>
+    <div id="tasks"></div>
+    <div class="buttons">
+      <button class="btn" onclick="resetProgress()">Reset Progress</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Your Daily Routine</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1 Hour — DSA</h3>
+      <p>Solve problems, review mistakes and practise coding.</p>
+    </div>
+    <div class="card">
+      <h3>1 Hour — Learning</h3>
+      <p>Study C++, web development or computer science subjects.</p>
+    </div>
+    <div class="card">
+      <h3>1 Hour — Projects</h3>
+      <p>Build applications, debug code and improve your portfolio.</p>
+    </div>
+    <div class="card">
+      <h3>Every Week</h3>
+      <p>Review your progress, revise old problems and plan the next week.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <h3>SAURAV.ROADMAP</h3>
+    <p>Learn consistently. Build real projects. Prepare for opportunities.</p>
+    <p class="small">2026–2030 · ₹20–30+ LPA is a target, not a guaranteed outcome.</p>
+  </div>
+</footer>
+
+<script>
+const milestones = [
+  "Set up C++ and complete beginner programs",
+  "Learn functions, arrays, strings and OOP",
+  "Learn Git and publish code on GitHub",
+  "Complete a personal portfolio website",
+  "Learn JavaScript and use an API",
+  "Complete a responsive education website",
+  "Learn React, Node.js and SQL",
+  "Build and deploy a full-stack application",
+  "Study DBMS, OS and computer networks",
+  "Complete 200 cumulative DSA problems",
+  "Apply for internships and student programs",
+  "Build a production-style project",
+  "Complete mock technical interviews",
+  "Prepare resume and placement applications",
+  "Apply for software engineering positions"
+];
+
+const taskContainer = document.getElementById("tasks");
+const storageKey = "sauravRoadmap2030";
+
+function loadProgress() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
+    return Array.isArray(saved) ? saved : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveProgress() {
+  try {
+    localStorage.setItem(
+      storageKey,
+      JSON.stringify(
+        [...taskContainer.querySelectorAll("input:checked")]
+          .map(input => Number(input.dataset.index))
+      )
+    );
+  } catch {}
+  updateProgress();
+}
+
+function updateProgress() {
+  const inputs = [...taskContainer.querySelectorAll("input")];
+  const completed = inputs.filter(input => input.checked).length;
+  const percent = inputs.length
+    ? Math.round(completed / inputs.length * 100) : 0;
+
+  document.getElementById("progressText").textContent =
+    `${percent}% completed (${completed}/${inputs.length} milestones)`;
+  document.getElementById("progressBar").style.width = percent + "%";
+}
+
+function renderTasks() {
+  const saved = loadProgress();
+  milestones.forEach((milestone, index) => {
+    const label = document.createElement("label");
+    const checkbox = document.createElement("input");
+    const text = document.createElement("span");
+
+    checkbox.type = "checkbox";
+    checkbox.dataset.index = index;
+    checkbox.checked = saved.includes(index);
+    text.textContent = milestone;
+
+    checkbox.addEventListener("change", saveProgress);
+    label.append(checkbox, text);
+    taskContainer.appendChild(label);
+  });
+  updateProgress();
+}
+
+function resetProgress() {
+  if (!confirm("Reset all roadmap progress?")) return;
+  taskContainer.querySelectorAll("input").forEach(input => {
+    input.checked = false;
+  });
+  try { localStorage.removeItem(storageKey); } catch {}
+  updateProgress();
+}
+
+renderTasks();
+</script>
+
+</body>
+</html>
+How to run your website
+
+Open VS Code on your MacBook.
+
+Create a folder named IT-Roadmap.
+
+Create a file inside it named index.html.
+
+Paste the complete code above and save it.
+
+Open index.html in your browser.
+
+Your website includes an interactive checklist and progress bar. The checklist progress is saved in the browser, so it should remain available when you reopen the same website in the same browser, provided browser storage is enabled.
+
+wedsites 4 year roadmap to get a high package it job
+Best websites for your 4-year IT roadmap
+
+These websites can help you follow your plan from first-year B.Tech to software engineering placements.
+
+1.
+FirstHack Learn
+
+4-year plan
+
+Programming courses, practice problems, mock tests and a four-year placement plan.
+
+Open website
+ 
+firsthack.in
+
+2.
+Dijkstra
+
+Structured software engineering tasks, DSA, projects and progress tracking.
+
+Open website
+ 
+dijkstra.org.in
+
+3.
+The Odin Project
+
+Free, project-based web development learning from beginner to full-stack applications.
+
+Open website
+ 
+Let's Code
+
+4.
+roadmap.sh
+
+Visual learning paths for frontend, backend, computer science and other developer skills.
+
+Open website
+
+5.
+LeetCode
+
+Practise data structures and algorithms for technical interviews.
+
+Open website
+ 
+OnExam
+
+My suggested starting order for you:
+
+FirstHack Learn — follow the four-year placement plan.
+
+LearnCpp — C++ fundamentals
+.
+
+The Odin Project — build practical development projects.
+
+LeetCode — start with beginner problems and progress gradually.
+
+Study for three hours daily and keep your college subjects on track. Your ₹20–30+ LPA target is an ambition, not a guaranteed outcome.
+
+This might also interest you.
+
+Plumery
+
+Your roadmap shouldn't cost extra.
+
+On Plumery, what you build is yours, and so is your roadmap. Only 10 places.
+
+Ad
+More options
+Pasted markdown.md
+File
+websites  page dowalond 
+
+Saurav, tumhare 4-year IT career roadmap website ko download karke MacBook par chalane ke liye main ye steps recommend karta hoon. Tumhare paas roadmap ka HTML code hai, jise index.html file mein save karke browser mein open kar sakte ho.
+
+Roadmap ke liye useful websites
+
+LearnCpp
+— C++ seekhne ke liye.
+
+GitHub Skills
+ — Git aur GitHub practice.
+
+LeetCode
+— DSA aur coding practice.
+
+The Odin Project
+ — Web development projects.
+
+roadmap.sh
+— Software development ke learning roadmaps.
+
+Download your website
+
+Saurav — 4-Year IT Roadmap
+
+HTML file · index.html · Responsive website
+
+Download index.html
+
+MacBook par kaise open karein
+
+Upar Download index.html par click karo.
+
+Downloaded file ko Finder mein locate karo.
+File par double-click karo. Website Safari ya Chrome mein open ho jayegi.
+
+Code edit karna ho to VS Code download karo
+, phir index.html ko usmein open karo.
+
+The website includes your 4-year roadmap, learning resources, projects, and an interactive progress tracker. You can run it locally without hosting it online.
+
+index . html code
+
+Saurav, aapki website ka index.html code yahan hai. Download karke browser mein open kar sakte ho.
+
+Download index.html
+
+MacBook par kaise open karein
+
+Upar diye gaye Download index.html par click karein.
+
+Finder → Downloads folder kholein.
+
+index.html par double-click karein.
+
+Website Safari ya Chrome mein open ho jayegi.
+
+Agar aapko HTML ka poora code yahin chat mein chahiye, to batao—main code bhi share kar sakta hoon.
